@@ -27,6 +27,6 @@ public class Siralama {
         }
 
 
-        System.out.println("Sayıların sıralanmış hali:\n" +eb+mid+ek);
+        System.out.println("Sayıların sıralanmış hali:\n" +eb+"\t"+mid+"\t"+ek);
     }
 }

@@ -15,14 +15,15 @@ public class MinMax {
         for(int i=0;i<n-1;i++){
             System.out.print("sayı giriniz:");
             sayi = girdi.nextInt();
-        }
-        if(sayi>eb){
-            eb=sayi;
-        }
+            if(sayi>eb){
+                eb=sayi;
+            }
             if(sayi<ek){
                 ek=sayi;
 
+            }
         }
+
         System.out.println("En küçük sayı:"+ek);
         System.out.println("En büyük sayı:"+eb);
     }

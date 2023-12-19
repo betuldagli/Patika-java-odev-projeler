@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 import java.util.Random;
 /**Java dilinde programın 0-100 arasında rastgele seçtiği bir sayıyı kullanıcının tahmin etmesini istediğimiz bir "Sayı Tahmin Oyunu" yapıyoruz.*/
 public class SayiTahmin {
@@ -10,7 +9,7 @@ public class SayiTahmin {
         int right=5;
         int tahmin;
 
-        System.out.println(number);
+        //System.out.println(number);
 
         while(right>0){
             System.out.println("Sayı giriniz:");

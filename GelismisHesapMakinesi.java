@@ -77,7 +77,6 @@ import java.util.Scanner;
         Scanner girdi = new Scanner(System.in);
         int secim;
         do{
-        System.out.println("Yapmak istediğiniz işlemi giriniz:");
         System.out.println(" 1- Toplama İşlemi\n" +
                 " 2- Çıkarma İşlemi\n" +
                 " 3- Çarpma İşlemi\n" +
@@ -86,7 +85,8 @@ import java.util.Scanner;
                 " 6- Faktoriyel Hesaplama\n" +
                 " 7- Mod Alma\n" +
                 " 8- Dikdörtgen Alan ve Çevre Hesabı\n"+
-                " 0-çıkış");
+                " 0-çıkış\n");
+        System.out.print("Yapmak istediğiniz işlemi giriniz:");
         secim = girdi.nextInt();
 
         int x, y;
@@ -96,7 +96,7 @@ import java.util.Scanner;
             x = girdi.nextInt();
             switch (secim) {
                 case 6:
-                    System.out.println(fakt(x));
+                    System.out.println("Sonuç:"+fakt(x));
                     break;
 
                 default:
@@ -109,34 +109,34 @@ import java.util.Scanner;
                     System.out.println("çıkış yapıldı.");
             }
         }
-        else {
+        else if(secim!=6){
             System.out.println("İşlem yapmak istediğiniz sayıları giriniz:");
             x = girdi.nextInt();
             y = girdi.nextInt();
 
             switch (secim) {
                 case 1:
-                    System.out.println(top(x, y));
+                    System.out.println("Sonuç:"+top(x, y));
                     break;
 
                 case 2:
-                    System.out.println(cik(x, y));
+                    System.out.println("Sonuç:"+cik(x, y));
                     break;
 
                 case 3:
-                    System.out.println(carp(x, y));
+                    System.out.println("Sonuç:"+carp(x, y));
                     break;
 
                 case 4:
-                    System.out.println(bol(x, y));
+                    System.out.println("Sonuç:"+bol(x, y));
                     break;
 
                 case 5:
-                    System.out.println(us(x, y));
+                    System.out.println("Sonuç:"+us(x, y));
                     break;
 
                 case 7:
-                    System.out.println(mod(x, y));
+                    System.out.println("Sonuç:"+mod(x, y));
                     break;
 
                 case 8:
@@ -150,5 +150,5 @@ import java.util.Scanner;
     }
            while(secim!=0);{
            }
-  }
+      }
 }

@@ -18,6 +18,6 @@ public class RecursiveUsAlma {
         System.out.println("Üssü giriniz:");
         us =girdi.nextInt();
 
-        System.out.println(us(taban,us));
+        System.out.println("Sonuç:"+us(taban,us));
     }
 }

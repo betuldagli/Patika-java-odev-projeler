@@ -10,6 +10,9 @@ public class DonguDordunKatlari {
         System.out.print("Sayı giriniz:");
         sayi = girdi.nextInt();
 
+        if(sayi%4==0){
+            toplam+=sayi;
+        }
         while(sayi%2==0){
             System.out.print("Sayı giriniz:");
             sayi = girdi.nextInt();
